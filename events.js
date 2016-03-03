@@ -7,6 +7,7 @@ var guineaPig = document.getElementById("guinea-pig");
 var hulkify = document.getElementById("make-large");
 var captureIt = document.getElementById("add-border");
 var roundIt = document.getElementById("add-rounding");
+var buttons = document.getElementsByTagName("button");
 
 
 //When any section is clicked the output target text should be "You clicked on the {text of the section} section"
@@ -77,4 +78,15 @@ function makeShitRoundedBordered() {
 
 //The first section's text should be bold.
 sections[0].classList.add("boldIt");
+
+//The last section's text should be bold and italicized.
 sections[sections.length - 1].classList.add("italicizeIt", "boldIt")
+
+//Make the buttons stop appearing next to each other as inline elements. Change them into block elements.
+buttonsAsBlockElements(buttons);
+
+function buttonsAsBlockElements(buttons) {
+    for (var j = 0; j < buttons.length; j++) {
+        buttons[j].classList.add("blockEm");
+    }
+}
