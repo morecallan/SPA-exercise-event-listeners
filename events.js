@@ -1,5 +1,6 @@
 var sections = document.getElementsByClassName("article-section");
 var outputSection = document.getElementById("output-target");
+var h1Tag = document.getElementById("page-title");
 
 
 
@@ -15,4 +16,11 @@ function giveSectionName(sections) {
 function selectedShit(e){
     var clickedItem = e.target.innerHTML
     outputSection.innerHTML = "You clicked on the " + clickedItem + " section.";
+}
+
+//When the mouse is over the h1 tag, the output element should contain the text "You moved your mouse over the header".
+h1Tag.addEventListener("mouseover", mousedOverShit);
+
+function mousedOverShit() {
+   outputSection.innerHTML = "You moved your mouse over the header."; 
 }
