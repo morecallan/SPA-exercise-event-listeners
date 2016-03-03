@@ -6,6 +6,7 @@ var addColor = document.getElementById("add-color");
 var guineaPig = document.getElementById("guinea-pig");
 var hulkify = document.getElementById("make-large");
 var captureIt = document.getElementById("add-border");
+var roundIt = document.getElementById("add-rounding");
 
 
 //When any section is clicked the output target text should be "You clicked on the {text of the section} section"
@@ -50,19 +51,26 @@ function mirrorDatShit() {
 addColor.addEventListener("click", fuckWithColor)
 
 function fuckWithColor() {
-    guineaPig.style.color = "blue"
+    guineaPig.classList.toggle("blueIt");
 }
 
 //When you click the "Hulkify" button, the guinea-pig element's font size should become much larger.
 hulkify.addEventListener("click", makeShitBig)
 
 function makeShitBig() {
-    guineaPig.style.fontSize = "40px"
+    guineaPig.classList.toggle("largeTextIt");
 }
 
 //When you click the "Capture it" button, the guinea-pig element should have a border added to it.
 captureIt.addEventListener("click", makeShitBordered)
 
 function makeShitBordered() {
-    guineaPig.style.border = "2px solid red"
+    guineaPig.classList.toggle("borderIt");
+}
+
+//When you click the "Rounded" button, the guinea-pig element's border should become rounded.
+roundIt.addEventListener("click", makeShitRoundedBordered)
+
+function makeShitRoundedBordered() {
+    guineaPig.classList.toggle("radiusIt");
 }
