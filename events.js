@@ -34,3 +34,11 @@ h1Tag.addEventListener("mouseout", mousedOuttaShit);
 function mousedOuttaShit() {
    outputSection.innerHTML = "You left me!!"; 
 }
+
+
+//When you type characters into the input field, the output element should mirror the text in the input field.
+inputBox.addEventListener("keyup", mirrorDatShit);
+
+function mirrorDatShit() {
+    outputSection.innerHTML = inputBox.value;
+} 
