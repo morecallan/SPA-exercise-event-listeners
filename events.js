@@ -2,6 +2,8 @@ var sections = document.getElementsByClassName("article-section");
 var outputSection = document.getElementById("output-target");
 var h1Tag = document.getElementById("page-title");
 var inputBox = document.getElementById("keypress-input");
+var addColor = document.getElementById("add-color");
+var guineaPig = document.getElementById("guinea-pig")
 
 
 
@@ -42,3 +44,10 @@ inputBox.addEventListener("keyup", mirrorDatShit);
 function mirrorDatShit() {
     outputSection.innerHTML = inputBox.value;
 } 
+
+//When you click the "Add color" button, the guinea-pig element's text color should change to blue.
+addColor.addEventListener("click", fuckWithColor)
+
+function fuckWithColor() {
+    guineaPig.style.color = "blue"
+}
