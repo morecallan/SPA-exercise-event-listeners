@@ -74,3 +74,6 @@ roundIt.addEventListener("click", makeShitRoundedBordered)
 function makeShitRoundedBordered() {
     guineaPig.classList.toggle("radiusIt");
 }
+
+//The first section's text should be bold.
+sections[0].classList.add("boldIt");
