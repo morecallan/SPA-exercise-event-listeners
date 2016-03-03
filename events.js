@@ -3,8 +3,9 @@ var outputSection = document.getElementById("output-target");
 var h1Tag = document.getElementById("page-title");
 var inputBox = document.getElementById("keypress-input");
 var addColor = document.getElementById("add-color");
-var guineaPig = document.getElementById("guinea-pig")
-var hulkify = document.getElementById("make-large")
+var guineaPig = document.getElementById("guinea-pig");
+var hulkify = document.getElementById("make-large");
+var captureIt = document.getElementById("add-border");
 
 
 //When any section is clicked the output target text should be "You clicked on the {text of the section} section"
@@ -57,4 +58,11 @@ hulkify.addEventListener("click", makeShitBig)
 
 function makeShitBig() {
     guineaPig.style.fontSize = "40px"
+}
+
+//When you click the "Capture it" button, the guinea-pig element should have a border added to it.
+captureIt.addEventListener("click", makeShitBordered)
+
+function makeShitBordered() {
+    guineaPig.style.border = "2px solid red"
 }
