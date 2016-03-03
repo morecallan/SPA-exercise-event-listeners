@@ -4,7 +4,7 @@ var h1Tag = document.getElementById("page-title");
 var inputBox = document.getElementById("keypress-input");
 var addColor = document.getElementById("add-color");
 var guineaPig = document.getElementById("guinea-pig")
-
+var hulkify = document.getElementById("make-large")
 
 
 //When any section is clicked the output target text should be "You clicked on the {text of the section} section"
@@ -50,4 +50,11 @@ addColor.addEventListener("click", fuckWithColor)
 
 function fuckWithColor() {
     guineaPig.style.color = "blue"
+}
+
+//When you click the "Hulkify" button, the guinea-pig element's font size should become much larger.
+hulkify.addEventListener("click", makeShitBig)
+
+function makeShitBig() {
+    guineaPig.style.fontSize = "40px"
 }
