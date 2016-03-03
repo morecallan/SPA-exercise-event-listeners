@@ -22,3 +22,7 @@
 .boldIt {
     font-weight: bold;
 }
+
+.italicizeIt {
+    font-style: italic;
+}

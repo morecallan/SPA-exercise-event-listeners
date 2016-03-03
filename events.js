@@ -77,3 +77,4 @@ function makeShitRoundedBordered() {
 
 //The first section's text should be bold.
 sections[0].classList.add("boldIt");
+sections[sections.length - 1].classList.add("italicizeIt", "boldIt")
