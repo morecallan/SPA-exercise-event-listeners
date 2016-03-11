@@ -57,7 +57,7 @@
 ### Final Result:
 > Uses JS to select elements, add event listener and toggle CSS class element.
 
-![Event Listeners Screenshot](https://github.com/morecallan/SPA-exercise-event-listeners/blob/master/screenshots/EventListeners.png)
+![Event Listeners Screenshot](https://raw.githubusercontent.com/morecallan/SPA-exercise-event-listeners/master/screenshots/EventListeners.png)
 
 
 ### How to run:
